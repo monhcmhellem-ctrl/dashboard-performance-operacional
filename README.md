@@ -1,78 +1,115 @@
-# Dashboard de Performance Operacional
+# 📊 Dashboard de Performance Operacional
 
-Projeto de portfólio desenvolvido para demonstrar conhecimentos em Python, tratamento de dados, análise operacional e construção de dashboards interativos.
+Projeto de portfólio desenvolvido para demonstrar competências em Python, Pandas, Data Analytics, tratamento e transformação de dados e construção de dashboards interativos.
 
-**Todos os dados utilizados neste projeto são fictícios e foram criados exclusivamente para fins de demonstração.**
+## 🔗 Acesse o Dashboard
 
-## Sobre o projeto
+[Abrir o Dashboard de Performance Operacional](https://monhcmhellem-ctrl.github.io/dashboard-performance-operacional/)
 
-O dashboard apresenta uma simulação de acompanhamento de instalações por unidade, região e data. A página é estática e carrega o conjunto demonstrativo incluído no repositório por um caminho relativo.
+O dashboard está publicado utilizando GitHub Pages.
 
-## Objetivo
+---
 
-Demonstrar um fluxo de análise de dados, desde a geração e preparação de dados sintéticos até a apresentação de indicadores operacionais em uma interface interativa e responsiva.
+## 🎯 Sobre o projeto
 
-## Tecnologias utilizadas
+O projeto simula um cenário de acompanhamento de instalações e desempenho operacional. Os indicadores podem ser analisados por período, unidade e região, com filtros interativos que atualizam os gráficos e KPIs.
 
-- Python
-- Pandas
-- HTML
-- CSS
-- JavaScript
-- Data Analytics
-- Dashboard Interativo
+> ⚠️ Todos os dados utilizados neste projeto são fictícios e foram criados exclusivamente para fins de demonstração. Nenhum dado corporativo, cliente real ou informação confidencial é utilizado.
 
-## Pipeline de dados
+---
 
-1. **Geração:** criação reprodutível de dados sintéticos para simular um cenário operacional.
-2. **Tratamento:** padronização de campos e representação de valores ausentes.
-3. **Validação:** conferência de registros, datas e consistência do cruzamento.
-4. **Transformação:** seleção e agregação de instalações por data, unidade e região.
-5. **Análise:** cálculo de métricas para apoiar a leitura dos resultados.
-6. **Dashboard:** visualização interativa dos indicadores.
+## 📌 Objetivo
 
-## Principais análises
+Demonstrar, de ponta a ponta, um fluxo de trabalho de dados:
 
-- Volume de instalações por dia;
-- instalações por unidade e região;
-- participação de cada unidade no total;
-- lojas identificadas e registros sem unidade;
-- evolução dos indicadores conforme o recorte selecionado.
+**Base de dados → Tratamento → Validação → Transformação → Análise → Indicadores → Dashboard → Publicação**
 
-## Funcionalidades do dashboard
+O objetivo é transformar dados brutos em informações estruturadas para acompanhar indicadores e apoiar a análise operacional.
 
-- Filtros multisseleção por data, unidade e região, com pesquisa;
-- seleção completa, limpeza e restauração da visão geral;
-- cinco indicadores que respondem aos filtros;
-- quatro gráficos interativos;
-- controle para incluir ou ocultar registros sem unidade nos gráficos por unidade;
-- layout responsivo para desktop, notebook e telas menores.
+---
 
-## Estrutura do projeto
+## 🛠️ Tecnologias utilizadas
+
+| Tecnologia | Aplicação no projeto |
+|---|---|
+| Python | Geração, tratamento e processamento de dados |
+| Pandas | Validação, transformação e agregação |
+| HTML | Estrutura da página |
+| CSS | Identidade visual e responsividade |
+| JavaScript | Filtros, KPIs e gráficos interativos |
+| Data Analytics | Análise dos indicadores operacionais |
+| GitHub | Organização e publicação do código |
+| GitHub Pages | Hospedagem estática do dashboard |
+
+---
+
+## 🔄 Pipeline de dados
+
+1. **Geração de dados fictícios** — criação reprodutível de uma base sintética para simular o cenário.
+2. **Tratamento dos dados** — padronização de campos e tratamento de valores ausentes.
+3. **Validação e consistência** — conferência de registros, datas e consistência do cruzamento das bases sintéticas.
+4. **Transformação** — preparação e agregação dos dados para análise.
+5. **Criação dos indicadores** — cálculo de métricas de volume e identificação das unidades.
+6. **Análise** — leitura dos resultados por período, unidade e região.
+7. **Dashboard interativo** — apresentação dos KPIs e gráficos com filtros combinados.
+8. **Publicação via GitHub Pages** — disponibilização do dashboard como página web estática.
+
+---
+
+## 📊 Dados do projeto
+
+- **10.000** registros fictícios;
+- **20** unidades;
+- **60** vendedores;
+- **5** regiões;
+- período de **01/07/2026 a 30/09/2026**;
+- indicador analisado: **Instalação**.
+
+---
+
+## 📈 Funcionalidades do dashboard
+
+- Filtro múltiplo por data;
+- filtro múltiplo por unidade;
+- filtro por região;
+- seleção de todos os registros;
+- limpeza dos filtros;
+- restauração da visão completa;
+- indicadores de performance;
+- análise diária;
+- ranking por unidade;
+- tratamento de registros sem unidade identificada;
+- atualização dinâmica dos indicadores e gráficos;
+- layout responsivo.
+
+---
+
+## 💡 Principais competências demonstradas
+
+- Tratamento e preparação de dados;
+- análise exploratória;
+- validação de bases;
+- transformação de dados;
+- construção de indicadores;
+- Data Analytics;
+- visualização de dados;
+- desenvolvimento de dashboards;
+- automação de processos;
+- organização de projetos;
+- disponibilização de aplicações web.
+
+---
+
+## 📁 Estrutura do projeto
 
 ```text
-PUBLICAR_GITHUB/
+dashboard-performance-operacional/
+│
 ├── index.html
 ├── portfolio_data.js
 ├── README.md
+│
 └── src/
     ├── gerar_dados_ficticios.py
     └── processar_dados.py
 ```
-
-`index.html` carrega `portfolio_data.js` do mesmo diretório. Os scripts em `src/` documentam a geração e o processamento dos dados sintéticos; eles não são necessários para abrir a página publicada.
-
-## Publicação e execução local
-
-Para testar localmente, abra `index.html` em um navegador moderno. Para publicar com GitHub Pages, use o conteúdo desta pasta como origem do site. A página inicial e o arquivo de dados devem permanecer juntos para que o caminho relativo continue funcionando.
-
-Os scripts demonstrativos requerem Python, Pandas e NumPy. Eles podem ser executados localmente com:
-
-```bash
-python src/gerar_dados_ficticios.py
-python src/processar_dados.py
-```
-
-## Observação sobre dados fictícios
-
-Todos os nomes de unidades, vendedores e demais valores foram inventados para demonstração. O projeto não contém cadastros, arquivos ou informações de uma operação real.
